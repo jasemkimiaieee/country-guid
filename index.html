@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Guid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="1789537691a819.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="mode">
+                        <button class="mode__btn">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <ul class="mode__list">
+                            <li class="mode__item mode__item--active" data-theme="light">
+                                <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="mode__item" data-theme="dark">
+                                <i class="fas fa-moon"></i>
+                            </li>
+                            <li class="mode__item" data-theme="glass">
+                                <i class="fas fa-window-restore"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search">
+                        <span class="search__result">0</span>
+                        <input type="text" class="search__input" placeholder="Enter Country Name...">
+                        <button class="search__btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <select name="filter" class="filter" id="filter">
+                        <option value="all">all</option>
+                        <option value="asia">asia</option>
+                        <option value="europe">europe</option>
+                        <option value="americas">americas</option>
+                        <option value="africa">africa</option>
+                        <option value="oceania">oceania</option>
+                        <option value="antarctic">antarctic</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <h1 class="main__title">Countries</h1>
+                <section class="countries"></section>
+            </div>
+        </main>
+
+        <div class="modale modale--hidden">
+            <div class="modale__container">
+                <button class="modale__closer">
+                    <i class="fas fa-window-close"></i>
+                </button>
+                <div class="modale__screen"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/js/all.min.js"
+        integrity="sha512-2+f4MxT8KwN4tUzw6/hv9kxKiix603S9kmBcix+0y0dBhd6zdaPOV1Thf1DM886pFZG+cAtmshBi8UBpo6m3JA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/countriesV4.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>

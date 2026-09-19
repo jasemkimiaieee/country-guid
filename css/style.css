@@ -675,4 +675,16 @@ main {
   .countries {
     justify-content: center;
   }
+  .search__btn {
+    display: none;
+  }
+  .search__input {
+    font-size: 14px;
+  }
+  .search__input::placeholder {
+    font-size: 14px;
+  }
+  .search__result--active {
+    display: none;
+  }
 }

@@ -675,14 +675,18 @@ main {
   .countries {
     justify-content: center;
   }
+  .filter {
+    padding: 3px 5px;
+  }
   .search__btn {
     display: none;
   }
   .search__input {
     font-size: 14px;
+    width: 100%;
   }
   .search__input::placeholder {
-    font-size: 14px;
+    font-size: 8px;
   }
   .search__result--active {
     display: none;
